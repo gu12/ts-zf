@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","sources":["../src/index.ts"],"sourcesContent":["\nlet a:string = '123'\nconsole.log(a)\ndebugger\n\n\n"],"names":[],"mappings":";;;CACA,IAAI,CAAC,GAAU,KAAK,CAAA;CACpB,OAAO,CAAC,GAAG,CAAC,CAAC,CAAC,CAAA;CACd;;;;;;"}
