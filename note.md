@@ -1,4 +1,4 @@
-// tsc --init
+// tsc --init  产生tsconfig.json
 /**
  * tsc ts -> js
  * ts-node 在Node环境下运行
