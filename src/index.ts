@@ -93,3 +93,29 @@ ele!.style.color = 'red';  //非空断言 表示一定有值 !是ts的语法
 type Direction = 'left'| 'up' |'right'|'down' //;类型别名
 let direction:Direction
 direction= 'left'
+
+function sum(a,b){
+     return a + b
+}
+
+let sum2:(a:string,b:string)=>string = (a:string,b:string):string=>{
+    return a + b
+
+}
+
+//剩余参数
+let sum3 = (...args:number[])=>{
+
+}
+//函数重载 希望把字符串 数字转化成数组
+//123 => [1,2,3]
+//'123' => ['1','2','3']
+function toArray(value:number):number[]
+function toArray(value:string):string[]
+function toArray(value:number | string){
+     if(typeof value === 'string'){
+         return value.split('')
+     }else{
+         return value.toString().split('').map(item => parseInt(item))
+     }
+}
